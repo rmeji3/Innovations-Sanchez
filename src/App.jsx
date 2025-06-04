@@ -32,29 +32,36 @@ function App() {
           Contact
         </div>
       
-        <div>
-          <label>
-            <input name="myInput"
-            className="bg-white text-black rounded p-2 m-2" 
-            placeholder="Enter your email" />
-          </label>
+          <div>
+            <label>
+              <input name="myInput"
+              className="bg-white text-black rounded p-2 m-2" 
+              placeholder="Enter your email" />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              <input name="myInput" 
+              className="bg-white text-black rounded p-2 m-2" placeholder
+              ="Enter your phone number"/>
+            </label>
+          </div>
+
+          <button type='submit' 
+          className="bg-white text-black rounded p-2 m-2 hover:bg-gray-200 transition duration-300 "
+          >
+            Submit
+          </button>
+        </div>
+        <div className = "h-[1000px]">
+        
+        </div>
+        <div ref = {myElementRef} className = "h-[500px] bg-[#F2F2F2] flex items-center justify-center">
+          here is the content
         </div>
 
-        <div>
-          <label>
-            <input name="myInput" 
-            className="bg-white text-black rounded p-2 m-2" placeholder
-            ="Enter your phone number"/>
-          </label>
-        </div>
-
-        <button type='submit' 
-        className="bg-white text-black rounded p-2 m-2 hover:bg-gray-200 transition duration-300 "
-        >
-          Submit
-        </button>
-      </div>
-  
+    </div>
   )
 }
 
