@@ -9,6 +9,11 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const myElementRef  = useRef(null)
+
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+
   const scrollToElement = (e) => {
      e.preventDefault();
     myElementRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -40,19 +45,6 @@ function App() {
       </nav>
       <div className = "h-[100px]"></div> {/* spacer for nav this is probably scuffed*/}
 
-      {/* home section */}
-      <div className="flex max-w-4xl mx-auto my-8 bg-white rounded shadow overflow-hidden">
-     {/* Left: Carousel */}
-        <div className="w-1/2 flex flex-col items-center justify-center bg-gray-100">
-          <img src={images[current]} alt="carousel" className="object-cover w-full h-64" />
-          <div className="flex justify-between w-full px-4 py-2">
-            <button onClick={prevImage} className="bg-[#446E67] text-white px-3 py-1 rounded">Prev</button>
-            <button onClick={nextImage} className="bg-[#446E67] text-white px-3 py-1 rounded">Next</button>
-
-      <div className="h-[90px]" />
-
-
-
      
       <div ref={homeRef} className="h-[600px] bg-[#f5f5f5] text-black text-3xl font-bold">
         <h1 className="">Welcome to the Home Section</h1>
@@ -78,6 +70,23 @@ function App() {
         </div>
 
       </div>
+
+
+
+      {/* home section */}
+      <div className="flex max-w-4xl mx-auto my-8 bg-white rounded shadow overflow-hidden">
+     {/* Left: Carousel */}
+        <div className="w-1/2 flex flex-col items-center justify-center bg-gray-100">
+          <img src={images[current]} alt="carousel - this entire component will be changed" className="object-cover w-full h-64" />
+          <div className="flex justify-between w-full px-4 py-2">
+            <button onClick={prevImage} className="bg-[#446E67] text-white px-3 py-1 rounded">Prev</button>
+            <button onClick={nextImage} className="bg-[#446E67] text-white px-3 py-1 rounded">Next</button>
+
+      <div className="h-[90px]" />
+
+
+
+
 
           </div>
         </div>
