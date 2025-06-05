@@ -25,8 +25,8 @@ function App() {
   const prevImage = () => setCurrent((current - 1 + images.length) % images.length);
 
   return (
-    <div className = "relative">
-      <nav className = "bar absolute top-0 w-full h-[80px] flex items-center bg-[#446E67] text-white p-4 flex justify-between px-7 font-montserrat">
+    <div className = "relative w-full font-montserrat">
+      <nav className = "bar fixed top-0 w-full h-[80px] flex items-center bg-[#446E67] text-white p-4 flex justify-between px-7 font-montserrat">
         <div>
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </div>
@@ -48,6 +48,37 @@ function App() {
           <div className="flex justify-between w-full px-4 py-2">
             <button onClick={prevImage} className="bg-[#446E67] text-white px-3 py-1 rounded">Prev</button>
             <button onClick={nextImage} className="bg-[#446E67] text-white px-3 py-1 rounded">Next</button>
+
+      <div className="h-[90px]" />
+
+
+
+     
+      <div ref={homeRef} className="h-[600px] bg-[#f5f5f5] text-black text-3xl font-bold">
+        <h1 className="">Welcome to the Home Section</h1>
+        <div>
+          <br></br>
+          <h3 className="text-center">
+            This is the home section of the page. You can navigate to the About Us and Contact sections using the navigation bar above.
+          </h3>
+        </div>
+      </div>
+
+
+      
+      <div ref={aboutRef} className="h-[600px] bg-[#dbe9e6] text-black text-3xl font-bold p-4">
+        <h1 className="">About Us Section</h1>
+        <div>
+          <br>
+          </br>
+          <h3 className="text-center">
+            This is a simple React application demonstrating how to use the useRef hook to scroll to different sections of the page. 
+            The navigation bar allows you to smoothly scroll to the Home, About Us, and Contact sections.
+          </h3>
+        </div>
+
+      </div>
+
           </div>
         </div>
         {/* Right: Text */}
