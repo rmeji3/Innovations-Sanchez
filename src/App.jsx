@@ -6,29 +6,65 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const myElementRef  = useRef(null)
-  const scrollToElement = (e) => {
+  const homeRef  = useRef(null)
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = (ref) => (e) =>{
      e.preventDefault();
-    myElementRef.current?.scrollIntoView({ behavior: 'smooth' });
+   ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div className = "relative w-full">
-      <nav className = "bar absolute top-0 w-full h-[80px] flex items-center bg-[#446E67] text-white p-4 flex justify-between px-7 font-montserrat">
+    <div className = "relative w-full font-montserrat">
+      <nav className = "bar fixed top-0 w-full h-[80px] flex items-center bg-[#446E67] text-white p-4 flex justify-between px-7 font-montserrat">
         <div>
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </div>
         <ul>
-          <li><a href = ""
-          onClick={scrollToElement}
-          > Home </a></li>
-           <li><a href= ""> About us </a></li>
-          <li><a href = "" > Contact </a></li>
+          <li><a href = "#" onClick={scrollToSection(homeRef)} > Home </a></li>
+           <li><a href= "#"onClick={scrollToSection(aboutRef)}> About us </a></li>
+          <li><a href = "#" onClick={scrollToSection(contactRef)} > Contact </a></li>
         </ul>
       </nav>
 
+      <div className="h-[90px]" />
+
+
+
+     
+      <div ref={homeRef} className="h-[600px] bg-[#f5f5f5] text-black text-3xl font-bold">
+        <h1 className="">Welcome to the Home Section</h1>
+        <div>
+          <br></br>
+          <h3 className="text-center">
+            This is the home section of the page. You can navigate to the About Us and Contact sections using the navigation bar above.
+          </h3>
+        </div>
+      </div>
+
+
+      
+      <div ref={aboutRef} className="h-[600px] bg-[#dbe9e6] text-black text-3xl font-bold p-4">
+        <h1 className="">About Us Section</h1>
+        <div>
+          <br>
+          </br>
+          <h3 className="text-center">
+            This is a simple React application demonstrating how to use the useRef hook to scroll to different sections of the page. 
+            The navigation bar allows you to smoothly scroll to the Home, About Us, and Contact sections.
+          </h3>
+        </div>
+
+      </div>
+
+      
+
+
+      
+
       <div className="bg-[#446E67] max-w-962">
-        <div className="text-white text-3xl font-bold p-4">
+        <div ref={contactRef} className="text-white text-3xl font-bold p-4">
           Contact
         </div>
       
@@ -54,12 +90,8 @@ function App() {
             Submit
           </button>
         </div>
-        <div className = "h-[1000px]">
-        
-        </div>
-        <div ref = {myElementRef} className = "h-[500px] bg-[#F2F2F2] flex items-center justify-center">
-          here is the content
-        </div>
+       
+       
 
     </div>
   )
