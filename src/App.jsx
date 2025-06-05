@@ -1,4 +1,4 @@
-
+import pic from './assets/pic1.png'
 import { useState,useRef } from 'react'
 import reactLogo from './assets/react.svg'
 import email from './assets/email.svg'
@@ -14,9 +14,9 @@ function App() {
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
 
-  const scrollToElement = (e) => {
+  const scrollToSection =(ref) => (e) => {
      e.preventDefault();
-    myElementRef.current?.scrollIntoView({ behavior: 'smooth' });
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const images = [
@@ -36,11 +36,9 @@ function App() {
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </div>
         <ul>
-          <li><a href = ""
-          onClick={scrollToElement}
-          > Home </a></li>
-           <li><a href= ""> About us </a></li>
-          <li><a href = "" > Contact </a></li>
+          <li><a href = "#"onClick={scrollToSection(homeRef)}> Home </a></li>
+           <li><a href= "#"onClick={scrollToSection(aboutRef)}> About us </a></li>
+          <li><a href = "#"onClick={scrollToSection(contactRef)} > Contact </a></li>
         </ul>
       </nav>
       <div className = "h-[100px]"></div> {/* spacer for nav this is probably scuffed*/}
@@ -58,15 +56,33 @@ function App() {
 
 
       
-      <div ref={aboutRef} className="h-[600px] bg-[#dbe9e6] text-black text-3xl font-bold p-4">
-        <h1 className="">About Us Section</h1>
+      <div ref={aboutRef} className=" flex justify-center h-[600px] bg-[#dbe9e6] text-black text-3xl font-bold p-4">
+        {/* <h1 className="">About Us Section</h1> */}
         <div>
-          <br>
-          </br>
-          <h3 className="text-center">
+          <div>
+           <h1 className = " text-left">
+              {/* About Us */}
+           </h1>
+            <br></br>
+
+
+          </div>
+          {/* <div className ="grid grid-cols-2 gap-4 items-center justify-center"> */}
+      <div className="flex max-w-4xl mx-auto my-8 overflow-hidden ">
+
+          {/* <h3 className="text-left mt-4 max-w-2xl font-normal m-12 ">  */}
+          <div className="w-1/2 flex flex-col justify-center text-left p-1 font-normal">
+          <div className = "text-left font-mono"> About Us </div>
+          <br></br>
             This is a simple React application demonstrating how to use the useRef hook to scroll to different sections of the page. 
             The navigation bar allows you to smoothly scroll to the Home, About Us, and Contact sections.
-          </h3>
+          </div>
+          <div className="w-1/2 flex items-center justify-center">        
+
+            <img src={pic} className="h-120" alt="React logo" />
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -106,7 +122,7 @@ function App() {
         <div className = "h-[1000px]">
 
         </div>
-        <div ref = {myElementRef} className = "h-[250px] bg-[#446E67] flex items-center justify-center">
+        <div ref = {contactRef} className = "h-[250px] bg-[#446E67] flex items-center justify-center">
           <div className="bg-[#446E67] max-w-4xl mx-auto px-4">
             <div className="text-2xl text-white font-bold">Contact us</div>
             <div className="flex items-center text-white mt-4">
