@@ -68,16 +68,16 @@ function App() {
 
           </div>
           {/* <div className ="grid grid-cols-2 gap-4 items-center justify-center"> */}
-      <div className="flex max-w-4xl mx-auto my-8 overflow-hidden ">
+      <div className="flex my-8 overflow-hidden ">
 
           {/* <h3 className="text-left mt-4 max-w-2xl font-normal m-12 ">  */}
           <div className="w-1/2 flex flex-col justify-center text-left p-1 font-normal">
-          <div className = "text-left font-mono"> About Us </div>
-          <br></br>
+          <div className = "text-left font-mono align-"> About Us </div>
+
             This is a simple React application demonstrating how to use the useRef hook to scroll to different sections of the page. 
             The navigation bar allows you to smoothly scroll to the Home, About Us, and Contact sections.
           </div>
-          <div className="w-1/2 flex items-center justify-center">        
+          <div className="w-1/2 flex flex-col items-center justify-center">        
 
             <img src={pic} className="h-120" alt="React logo" />
             </div>
