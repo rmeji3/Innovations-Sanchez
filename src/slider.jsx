@@ -20,7 +20,7 @@ export default function SimpleSlider({ images }) {
     <Slider {...settings} className="w-full">
       {images.map((image, index) => (
         <div key={index}>
-          <img src={image} alt={`Slide ${index}`} className="w-full h-64 object-cover" />
+          <img src={image} alt={`Slide ${index}`} className="w-full h-200 object-cover" />
         </div>
       ))}
     </Slider>
