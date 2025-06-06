@@ -1,10 +1,9 @@
 import pic2 from './assets/logo.png'
 import pic from './assets/pic1.png'
 import { useState, useRef } from 'react'
-import reactLogo from './assets/react.svg'
 import email from './assets/email.svg'
 import phone from './assets/phone.svg'
-import viteLogo from '/vite.svg'
+import SimpleSlider from './slider';
 import './App.css'
 
 function App() {
@@ -19,14 +18,12 @@ function App() {
   };
 
   const images = [
-    'https://via.placeholder.com/400x300?text=Image+1',
-    'https://via.placeholder.com/400x300?text=Image+2',
-    'https://via.placeholder.com/400x300?text=Image+3'
+    pic,
+    'https://picsum.photos/seed/john/200/300',
+    'https://picsum.photos/seed/joe/200/300'
   ];
-  const [current, setCurrent] = useState(0);
 
-  const nextImage = () => setCurrent((current + 1) % images.length);
-  const prevImage = () => setCurrent((current - 1 + images.length) % images.length);
+  const [current, setCurrent] = useState(0);
 
   return (
     <div className="relative w-full font-montserrat">
@@ -96,10 +93,8 @@ function App() {
       <div className="flex max-w-4xl mx-auto my-8 bg-white rounded shadow overflow-hidden">
         {/* Left: Carousel */}
         <div className="w-1/2 flex flex-col items-center justify-center bg-gray-100">
-          <img src={images[current]} alt="carousel" className="object-cover w-full h-64" />
           <div className="flex justify-between w-full px-4 py-2">
-            <button onClick={prevImage} className="bg-[#446E67] text-white px-3 py-1 rounded">Prev</button>
-            <button onClick={nextImage} className="bg-[#446E67] text-white px-3 py-1 rounded">Next</button>
+            <SimpleSlider images={images} />
           </div>
         </div>
         {/* Right: Text */}
@@ -119,11 +114,11 @@ function App() {
           <div className="text-2xl text-white font-bold">Contact us</div>
           <div className="flex items-center text-white mt-4">
             <img src={email} className="h-6 mr-2" alt="Email logo" />
-            email@example.com
+            <a href="mailto:email@example.com">email@example.com</a>
           </div>
           <div className="flex items-center text-white mt-4">
             <img src={phone} className="h-7 mr-2" alt="Phone logo" />
-            Phone: (123) 456-7890
+            <a href="tel:1234567890">(123) 456-7890</a>
           </div>
         </div>
       </div>
