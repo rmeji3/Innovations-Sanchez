@@ -90,17 +90,17 @@ function App() {
       </div>
 
       {/* Carousel Section */}
-      <div className="flex max-w-4xl mx-auto my-8 bg-white rounded shadow overflow-hidden">
+      <div className="flex mx-auto my-20 bg-white rounded shadow overflow-hidden">
         {/* Left: Carousel */}
         <div className="w-1/2 flex flex-col items-center justify-center bg-gray-100">
-          <div className="flex justify-between w-full px-4 py-2">
+          <div className="flex justify-between w-full">
             <SimpleSlider images={images} />
           </div>
         </div>
         {/* Right: Text */}
         <div className="w-1/2 flex flex-col justify-center p-8">
-          <h2 className="text-2xl font-bold mb-4">Welcome to Our Site</h2>
-          <p>
+          <h2 className="text-4xl font-bold mb-4">Welcome to Our Site</h2>
+          <p className="text-lg">
             This is the right box. You can put any text here, such as a description of your business, a welcome message, or anything else you want visitors to see alongside your image carousel.
           </p>
         </div>
