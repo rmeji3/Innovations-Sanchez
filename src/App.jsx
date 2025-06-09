@@ -26,8 +26,8 @@ function App() {
   const [current, setCurrent] = useState(0);
 
   return (
-    <div className="relative w-full font-montserrat">
-      <nav className="bar fixed top-0 w-full h-[82px] flex items-center bg-[#446E67] text-white px-7 justify-between font-montserrat">
+    <div className="relative w-full font-montserrat font-sans">
+      <nav className="bar fixed top-0 w-full h-[82px] flex items-center bg-[#446E67] text-white px-7 justify-between font-montserrat z-100">
         <div>
           <img src={pic2} className="logo" alt="Vite logo" />
         </div>
@@ -90,7 +90,7 @@ function App() {
       </div>
 
       {/* Carousel Section */}
-      <div className="flex mx-auto my-20 bg-white rounded shadow overflow-hidden">
+      <div className="flex my-20 bg-white rounded shadow overflow-hidden">
 
         {/* Right: Text */}
         <div className="w-1/2 flex flex-col justify-center p-8">
@@ -108,10 +108,9 @@ function App() {
       </div>
 
       {/* Contact Section */}
-      <div className="h-[100px]" />
-      <div className="h-[1000px]" /> {/* Optional filler space */}
-      <div ref={contactRef} className="h-[250px] bg-[#446E67] flex items-center justify-center">
-        <div className="max-w-4xl mx-auto px-4">
+      {/* <div className="h-[1000px]" /> Optional filler space */}
+      <div ref={contactRef} className="h-[170px] bg-[#446E67] flex items-center justify-center">
+        <div className="max-w-4xl px-4">
           <div className="text-2xl text-white font-bold">Contact us</div>
           <div className="flex items-center text-white mt-4">
             <img src={email} className="h-6 mr-2" alt="Email logo" />
