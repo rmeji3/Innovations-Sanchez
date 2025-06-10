@@ -26,10 +26,10 @@ function App() {
   const [current, setCurrent] = useState(0);
 
   return (
-    <div className="relative w-full font-montserrat font-sans">
+    <div className="relative w-full  font-sans">
       <nav className="bar fixed top-0 w-full h-[82px] flex items-center bg-[#446E67] text-white px-7 justify-between font-montserrat z-100">
-        <div className = "group flex items-center relative">
-          <img src={pic2} className="logo" alt= "TREE logo" />
+        <div className="group flex items-center relative">
+          <img src={pic2} className="logo" alt="TREE logo" />
         <div className="text-2xl font-bold ml-2 text-white">YOU GROW IT <br /> WE MOW IT </div>
 
         </div>
@@ -94,15 +94,16 @@ function App() {
       {/* Carousel Section */}
       <div className="flex my-20 bg-white rounded shadow overflow-hidden">
 
-        {/* Right: Text */}
+        {/* Left: Text */}
         <div className="w-1/2 flex flex-col justify-center p-8">
           <h2 className="text-4xl font-bold mb-4">Welcome to Our Site</h2>
           <p className="text-lg">
             This is the right box. You can put any text here, such as a description of your business, a welcome message, or anything else you want visitors to see alongside your image carousel.
           </p>
         </div>
-                {/* Left: Carousel */}
-        <div className="w-1/2 flex flex-col items-center justify-center bg-gray-100">
+
+        {/* Right: Carousel */}
+        <div className="w-1/2 flex flex-col items-center justify-center">
           <div className="flex justify-between w-full">
             <SimpleSlider images={images} />
           </div>
