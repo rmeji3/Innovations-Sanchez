@@ -7,7 +7,6 @@ import SimpleSlider from './slider';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
@@ -23,14 +22,12 @@ function App() {
     'https://picsum.photos/seed/joe/200/300'
   ];
 
-  const [current, setCurrent] = useState(0);
-
   return (
     <div className="relative w-full font-montserrat font-sans">
-      <nav className="bar fixed top-0 w-full h-[82px] flex items-center bg-[#446E67] text-white px-7 justify-between font-montserrat z-100">
+      <nav className="bar fixed top-0 w-full h-[82px] flex items-center bg-[#446E67] text-[#fffff4] px-7 justify-between font-montserrat z-100">
         <div className = "group flex items-center relative">
           <img src={pic2} className="logo" alt= "TREE logo" />
-        <div className="text-2xl font-bold ml-2 text-white">YOU GROW IT <br /> WE MOW IT </div>
+        <div className="text-2xl font-bold ml-2 text-[#fffff4]">YOU GROW IT <br /> WE MOW IT </div>
 
         </div>
         <ul className="flex gap-6 text-lg ">
@@ -43,7 +40,7 @@ function App() {
       {/* <div className="h-[100px]" /> Spacer for nav */}
 
       {/* service Section */}
-      <div ref={homeRef} className="h-[510px] bg-[#f5f5f5] text-black text-4xl font-bold text-center">
+      <div ref={homeRef} className="h-[510px] bg-[#fffff4] text-black text-4xl font-bold text-center">
         <h1 className = "text item-center m-7 font-norm h-[190px] pt-27 text-green-800"> Our Services</h1>
         <div className ="grid grid-cols-1 sm:grid-cols-3 gap-6 m-3 ">
             <h2 className="text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
@@ -77,8 +74,8 @@ function App() {
         <div className="w-full flex flex-row items-center">
           {/* Text */}
           <div className="w-1/2 pr-8">
-            <h2 className="text-left text-4xl font-mono mb-4 pb-10">About Us</h2>
-            <p className="text-left text-lg font-mono">
+            <h2 className="text-left text-4xl font-bold mb-4 pb-10">About Us</h2>
+            <p className="text-left text-lg">
               This is a simple React application demonstrating how to use the useRef hook to scroll to different sections of the page.
               <br /><br />
               We are passionate about building innovative web solutions. Our team specializes in modern JavaScript frameworks and user-friendly interfaces. With a focus on quality and creativity, we strive to deliver the best experience for our clients.
@@ -92,7 +89,7 @@ function App() {
       </div>
 
       {/* Carousel Section */}
-      <div className="flex my-20 bg-white rounded shadow overflow-hidden">
+      <div className="flex my-20 bg-[#dbe9e6] rounded shadow overflow-hidden">
 
         {/* Right: Text */}
         <div className="w-1/2 flex flex-col justify-center p-8">
@@ -102,7 +99,7 @@ function App() {
           </p>
         </div>
                 {/* Left: Carousel */}
-        <div className="w-1/2 flex flex-col items-center justify-center bg-gray-100">
+        <div className="w-1/2 flex flex-col items-center justify-center bg-[#fffff4]">
           <div className="flex justify-between w-full">
             <SimpleSlider images={images} />
           </div>
@@ -113,12 +110,12 @@ function App() {
       {/* <div className="h-[1000px]" /> Optional filler space */}
       <div ref={contactRef} className="h-[170px] bg-[#446E67] flex items-center justify-center">
         <div className="max-w-4xl px-4">
-          <div className="text-2xl text-white font-bold">Contact us</div>
-          <div className="flex items-center text-white mt-4">
+          <div className="text-2xl text-[#fffff4] font-bold">Contact us</div>
+          <div className="flex items-center text-[#fffff4] mt-4">
             <img src={email} className="h-6 mr-2" alt="Email logo" />
             <a href="mailto:email@example.com">email@example.com</a>
           </div>
-          <div className="flex items-center text-white mt-4">
+          <div className="flex items-center text-[#fffff4] mt-4">
             <img src={phone} className="h-7 mr-2" alt="Phone logo" />
             <a href="tel:1234567890">(123) 456-7890</a>
           </div>
