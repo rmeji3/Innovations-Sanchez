@@ -45,21 +45,21 @@ function App() {
         <div className ="grid grid-cols-1 sm:grid-cols-3 gap-6 m-3 ">
             <h2 className="text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
                  Lawn Mowing
-                 <p className = "text-lg text-black mt-7 text-center ">
+                 <p className = "text-lg text-black mt-7 text-center font-normal m-4"> 
                   We provide professional lawn mowing services to keep your yard looking pristine. 
                  </p>
             </h2>
 
             <h2 className = "text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
                 Side Trimming
-              <p className = "text-lg text-black mt-7 text-center font-normal">
+              <p className = "text-lg text-black mt-7 text-center font-normal m-4">
                 Our side trimming service ensures that your hedges and bushes are neatly maintained, enhancing the overall appearance of your landscape.
               </p>
             </h2>
 
             <h2 className = "text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">     
                 Weed Control
-              <p className = "text-lg text-black mt-7 text-center">
+              <p className = "text-lg text-black mt-7 text-center font-normal m-4">
                 We offer effective weed control solutions to keep your garden healthy and free from unwanted plants.
               </p>
             </h2>
