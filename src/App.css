@@ -37,3 +37,10 @@ ul{
 li{
   padding: 15px;
 }
+
+/* Remove bottom spacing from slick-dots */
+.slick-dots {
+  bottom: 10px !important; /* Adjust as needed */
+  margin: 0;
+  padding: 0;
+}
