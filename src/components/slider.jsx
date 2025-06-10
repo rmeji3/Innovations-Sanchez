@@ -19,9 +19,10 @@ export default function SimpleSlider({ images }) {
   return (
     <Slider {...settings} className="w-full z-0">
       {images.map((image, index) => (
-        <div key={index}>
-          <img src={image} alt={`Slide ${index}`} className="w-full h-120 object-cover" />
-        </div>
+        <div className="w-full h-[500px]">
+        <img src={image} alt={`Slide ${index}`} className="w-full h-[550px] object-cover" />
+      </div>
+
       ))}
     </Slider>
   );
