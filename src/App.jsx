@@ -40,7 +40,7 @@ function App() {
       {/* <div className="h-[100px]" /> Spacer for nav */}
 
       {/* service Section */}
-      <div ref={homeRef} className="h-[510px] bg-[#fffff4] text-black text-4xl font-bold text-center">
+      <div ref={homeRef} className="h-[500px] bg-[#fffff4] text-black text-4xl font-bold text-center">
         <h1 className = "text item-center m-7 font-norm h-[190px] pt-27 text-green-800"> Our Services</h1>
         <div className ="grid grid-cols-1 sm:grid-cols-3 gap-6 m-3 ">
             <h2 className="text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
@@ -70,7 +70,7 @@ function App() {
       </div>
 
       {/* About Section */}
-      <div ref={aboutRef} className="bg-[#dbe9e6] text-black px-12 py-13"> 
+      <div ref={aboutRef} className="bg-[#dbe9e6] text-black px-12 py-13 ="> 
         <div className="w-full flex flex-row items-center">
           {/* Text */}
           <div className="w-1/2 pr-8">
