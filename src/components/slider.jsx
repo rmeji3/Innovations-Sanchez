@@ -11,19 +11,24 @@ export default function SimpleSlider({ images }) {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000, // 3 seconds
-    arrows: false, 
+    autoplaySpeed: 3000,
+    arrows: false,
     pauseOnHover: false,
   };
 
   return (
-    <Slider {...settings} className="w-full z-0">
-      {images.map((image, index) => (
-        <div className="w-full h-[500px]">
-        <img src={image} alt={`Slide ${index}`} className="w-full h-[550px] object-cover" />
-      </div>
-
-      ))}
-    </Slider>
+    <div className="w-full">
+      <Slider {...settings} className="z-0">
+        {images.map((image, index) => (
+          <div key={index} className="w-full">
+            <img
+              src={image}
+              alt={`Slide ${index}`}
+              className="w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover"
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 }
