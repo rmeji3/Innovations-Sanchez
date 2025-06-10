@@ -24,10 +24,10 @@ function App() {
 
   return (
     <div className="relative w-full font-montserrat font-sans">
-      <nav className="bar fixed top-0 w-full h-[82px] flex items-center bg-[#446E67] text-[#fffff4] px-7 justify-between font-montserrat z-100">
+      <nav className="bar fixed top-0 w-full h-[82px] flex items-center bg-[#446E67] text-[#fbf7f5] px-7 justify-between font-montserrat z-100">
         <div className = "group flex items-center relative">
           <img src={pic2} className="logo" alt= "TREE logo" />
-        <div className="text-2xl font-bold ml-2 text-[#fffff4]">YOU GROW IT <br /> WE MOW IT </div>
+        <div className="text-2xl font-bold ml-2 text-[#fbf7f5]">YOU GROW IT <br /> WE MOW IT </div>
 
         </div>
         <ul className="flex gap-6 text-lg ">
@@ -40,7 +40,7 @@ function App() {
       {/* <div className="h-[100px]" /> Spacer for nav */}
 
       {/* service Section */}
-      <div ref={homeRef} className="h-[510px] bg-[#fffff4] text-black text-4xl font-bold text-center">
+      <div ref={homeRef} className="h-[510px] bg-[#fbf7f5] text-black text-4xl font-bold text-center">
         <h1 className = "text item-center m-7 font-norm h-[190px] pt-27 text-green-800"> Our Services</h1>
         <div className ="grid grid-cols-1 sm:grid-cols-3 gap-6 m-3 ">
             <h2 className="text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
@@ -99,7 +99,7 @@ function App() {
           </p>
         </div>
                 {/* Left: Carousel */}
-        <div className="w-1/2 flex flex-col items-center justify-center bg-[#fffff4]">
+        <div className="w-1/2 flex flex-col items-center justify-center bg-[#fbf7f5]">
           <div className="flex justify-between w-full">
             <SimpleSlider images={images} />
           </div>
@@ -110,12 +110,12 @@ function App() {
       {/* <div className="h-[1000px]" /> Optional filler space */}
       <div ref={contactRef} className="h-[170px] bg-[#446E67] flex items-center justify-center">
         <div className="max-w-4xl px-4">
-          <div className="text-2xl text-[#fffff4] font-bold">Contact us</div>
-          <div className="flex items-center text-[#fffff4] mt-4">
+          <div className="text-2xl text-[#fbf7f5] font-bold">Contact us</div>
+          <div className="flex items-center text-[#fbf7f5] mt-4">
             <img src={email} className="h-6 mr-2" alt="Email logo" />
             <a href="mailto:email@example.com">email@example.com</a>
           </div>
-          <div className="flex items-center text-[#fffff4] mt-4">
+          <div className="flex items-center text-[#fbf7f5] mt-4">
             <img src={phone} className="h-7 mr-2" alt="Phone logo" />
             <a href="tel:1234567890">(123) 456-7890</a>
           </div>
