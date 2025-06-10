@@ -3,9 +3,8 @@ import logo from '../assets/logo.png'
 
 const scrollToSection = (ref, offset = 82) => (e) => {
     e.preventDefault();
-
-        const topPos = ref.current.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top: topPos, behavior: 'smooth' });
+    const topPos = ref.current.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: topPos, behavior: 'smooth' });
 };
 
 function Navbar({ servicesRef, aboutRef, contactRef, homeRef }) {

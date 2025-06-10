@@ -13,7 +13,7 @@ export default function SimpleSlider({ images }) {
     autoplay: true,
     autoplaySpeed: 3000, // 3 seconds
     arrows: false, 
-    pauseOnHover: true,
+    pauseOnHover: false,
   };
 
   return (
