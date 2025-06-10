@@ -1,10 +1,13 @@
 import React from "react";
 import logo from '../assets/logo.png'
 
-const scrollToSection = (ref) => (e) => {
+const scrollToSection = (ref, offset = 82) => (e) => {
     e.preventDefault();
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
+
+        const topPos = ref.current.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: topPos, behavior: 'smooth' });
 };
+
 function Navbar({ servicesRef, aboutRef, contactRef, homeRef }) {
     return (
         <nav className="bar fixed top-0 w-full h-[82px] flex items-center bg-[#446E67] text-[#fbf7f5] px-7 justify-between font-montserrat z-100">
