@@ -14,9 +14,9 @@ const Carousel = ({homeRef}) => {
 
         {/* Left: Text */}
         <div className="w-1/2 flex flex-col justify-center p-8">
-          <h2 className="text-4xl font-bold mb-4">Welcome to Our Site</h2>
+          <h2 className="text-4xl font-bold mb-4">Keeping Your Lawn Picture Perfect</h2>
           <p className="text-lg">
-            This is the right box. You can put any text here, such as a description of your business, a welcome message, or anything else you want visitors to see alongside your image carousel.
+          From mowing to edging to weed control, our expert team brings out the best in your yard — every season, every visit.
           </p>
         </div>
         {/* Right: Carousel */}
