@@ -10,7 +10,7 @@ const images = [
 
 const Carousel = ({homeRef}) => {
     return (
-        <div ref={homeRef} className="flex my-20 bg-[#dbe9e6] rounded shadow overflow-hidden">
+        <div ref={homeRef} className="flex mt-[82px] bg-[#dbe9e6] rounded shadow overflow-hidden">
 
         {/* Right: Text */}
         <div className="w-1/2 flex flex-col justify-center p-8">
