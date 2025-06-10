@@ -16,7 +16,7 @@ const Services = ({servicesRef}) => {
             <h2 className = "text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
                 Side Trimming
             <p className = "text-lg text-black mt-7 text-center font-normal m-4">
-                Our side trimming service ensures that your hedges and bushes are neatly maintained, enhancing the overall appearance of your landscape.
+                Our side trimming keeps hedges and bushes neat, boosting your landscape’s look.
             </p>
             </h2>
 
