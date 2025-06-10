@@ -11,6 +11,7 @@ function App() {
   const servicesRef = useRef(null);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
+  const homeRef = useRef(null);
 
   return (
     <div className="relative w-full font-montserrat font-sans">
@@ -19,10 +20,11 @@ function App() {
         servicesRef={servicesRef}
         aboutRef={aboutRef}
         contactRef={contactRef}
+        homeRef={homeRef}
       />
 
       {/* Carousel Section */}
-      <Carousel/>
+      <Carousel homeRef={homeRef}/>
 
       {/* Services */}
       <Services servicesRef={servicesRef} />
