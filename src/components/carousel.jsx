@@ -8,9 +8,9 @@ const images = [
     'https://picsum.photos/seed/joe/200/300'
   ];
 
-const Carousel = () => {
+const Carousel = ({homeRef}) => {
     return (
-        <div className="flex my-20 bg-[#dbe9e6] rounded shadow overflow-hidden">
+        <div ref={homeRef} className="flex my-20 bg-[#dbe9e6] rounded shadow overflow-hidden">
 
         {/* Right: Text */}
         <div className="w-1/2 flex flex-col justify-center p-8">
