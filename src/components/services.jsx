@@ -4,7 +4,7 @@ const Services = ({servicesRef}) => {
     {/* service Section */}
     return (
         <div ref={servicesRef} className="h-[510px] bg-[#fbf7f5] text-black text-4xl font-bold text-center">
-        <h1 className = "text item-center m-7 font-norm h-[190px] pt-27 text-green-800"> Our Services</h1>
+        <h1 className = "text item-center font-norm h-[190px] pt-27 text-green-800"> Our Services</h1>
         <div className ="grid grid-cols-1 sm:grid-cols-3 gap-6 m-3 ">
             <h2 className="text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
                 Lawn Mowing
