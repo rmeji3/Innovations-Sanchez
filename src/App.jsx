@@ -1,130 +1,38 @@
-import pic2 from './assets/logo.png'
-import pic from './assets/pic1.png'
-import { useState, useRef } from 'react'
-import email from './assets/email.svg'
-import phone from './assets/phone.svg'
-import SimpleSlider from './slider';
+import Navbar from './components/navbar'
+import Services from './components/services'
+import AboutUs from './components/aboutUs'
+import Carousel from './components/carousel'
+import Contact from './components/contact'
+
+import { useRef } from 'react'
 import './App.css'
 
 function App() {
-  const homeRef = useRef(null);
+  const servicesRef = useRef(null);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
 
-  const scrollToSection = (ref) => (e) => {
-    e.preventDefault();
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const images = [
-    pic,
-    'https://picsum.photos/seed/john/200/300',
-    'https://picsum.photos/seed/joe/200/300'
-  ];
-
   return (
     <div className="relative w-full font-montserrat font-sans">
-      <nav className="bar fixed top-0 w-full h-[82px] flex items-center bg-[#446E67] text-[#fffff4] px-7 justify-between font-montserrat z-100">
-        <div className = "group flex items-center relative">
-          <img src={pic2} className="logo" alt= "TREE logo" />
-        <div className="text-2xl font-bold ml-2 text-[#fffff4]">YOU GROW IT <br /> WE MOW IT </div>
-
-        </div>
-        <ul className="flex gap-6 text-lg ">
-          <li><a href="#" onClick={scrollToSection(homeRef)}>Services</a></li>
-          <li><a href="#" onClick={scrollToSection(aboutRef)}>About us</a></li>
-          <li><a href="#" onClick={scrollToSection(contactRef)}>Contact</a></li>
-        </ul>
-      </nav>
-
-      {/* <div className="h-[100px]" /> Spacer for nav */}
-
-      {/* service Section */}
-      <div ref={homeRef} className="h-[510px] bg-[#fffff4] text-black text-4xl font-bold text-center">
-        <h1 className = "text item-center m-7 font-norm h-[190px] pt-27 text-green-800"> Our Services</h1>
-        <div className ="grid grid-cols-1 sm:grid-cols-3 gap-6 m-3 ">
-            <h2 className="text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
-                 Lawn Mowing
-                 <p className = "text-lg text-black mt-7 text-center font-normal m-4"> 
-                  We provide professional lawn mowing services to keep your yard looking pristine. 
-                 </p>
-            </h2>
-
-            <h2 className = "text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
-                Side Trimming
-              <p className = "text-lg text-black mt-7 text-center font-normal m-4">
-                Our side trimming service ensures that your hedges and bushes are neatly maintained, enhancing the overall appearance of your landscape.
-              </p>
-            </h2>
-
-            <h2 className = "text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">     
-                Weed Control
-              <p className = "text-lg text-black mt-7 text-center font-normal m-4">
-                We offer effective weed control solutions to keep your garden healthy and free from unwanted plants.
-              </p>
-            </h2>
-        </div>
-
-        <br></br>
-        
-      </div>
-
-      {/* About Section */}
-      <div ref={aboutRef} className="bg-[#dbe9e6] text-black px-12 py-13"> 
-        <div className="w-full flex flex-row items-center">
-          {/* Text */}
-          <div className="w-1/2 pr-8">
-            <h2 className="text-left text-4xl font-bold mb-4 pb-10">About Us</h2>
-            <p className="text-left text-lg">
-              This is a simple React application demonstrating how to use the useRef hook to scroll to different sections of the page.
-              <br /><br />
-              We are passionate about building innovative web solutions. Our team specializes in modern JavaScript frameworks and user-friendly interfaces. With a focus on quality and creativity, we strive to deliver the best experience for our clients.
-            </p>
-          </div>
-          {/* Image */}
-          <div className="w-1/2 flex justify-center"> 
-            <img src={pic} className="h-120 object-contain" alt="About Us" />
-          </div>
-        </div>
-      </div>
+      {/* Navbar */}
+      <Navbar
+        servicesRef={servicesRef}
+        aboutRef={aboutRef}
+        contactRef={contactRef}
+      />
 
       {/* Carousel Section */}
-      <div className="flex my-20 bg-[#dbe9e6] rounded shadow overflow-hidden">
+      <Carousel/>
 
-        {/* Right: Text */}
-        <div className="w-1/2 flex flex-col justify-center p-8">
-          <h2 className="text-4xl font-bold mb-4">Welcome to Our Site</h2>
-          <p className="text-lg">
-            This is the right box. You can put any text here, such as a description of your business, a welcome message, or anything else you want visitors to see alongside your image carousel.
-          </p>
-        </div>
-                {/* Left: Carousel */}
-        <div className="w-1/2 flex flex-col items-center justify-center bg-[#fffff4]">
-          <div className="flex justify-between w-full">
-            <SimpleSlider images={images} />
-          </div>
-        </div>
-      </div>
+      {/* Services */}
+      <Services servicesRef={servicesRef} />
+
+      {/* About Section */}
+      <AboutUs aboutRef={aboutRef} />
 
       {/* Contact Section */}
-      {/* <div className="h-[1000px]" /> Optional filler space */}
-      <div ref={contactRef} className="h-[170px] bg-[#446E67] flex items-center justify-center">
-        <div className="max-w-4xl px-4">
-          <div className="text-2xl text-[#fffff4] font-bold">Contact us</div>
-          <div className="flex items-center text-[#fffff4] mt-4">
-            <img src={email} className="h-6 mr-2" alt="Email logo" />
-            <a href="mailto:email@example.com">email@example.com</a>
-          </div>
-          <div className="flex items-center text-[#fffff4] mt-4">
-            <img src={phone} className="h-7 mr-2" alt="Phone logo" />
-            <a href="tel:1234567890">(123) 456-7890</a>
-          </div>
-        </div>
-      </div>
+      <Contact contactRef={contactRef}/>
     </div>
-
-
-
   )
 }
 
