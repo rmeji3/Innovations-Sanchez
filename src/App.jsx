@@ -28,8 +28,10 @@ function App() {
   return (
     <div className="relative w-full font-montserrat">
       <nav className="bar fixed top-0 w-full h-[82px] flex items-center bg-[#446E67] text-white px-7 justify-between font-montserrat">
-        <div>
-          <img src={pic2} className="logo" alt="Vite logo" />
+        <div className = "group flex items-center relative">
+          <img src={pic2} className="logo" alt= "TREE logo" />
+        <div className="text-2xl font-bold ml-2 text-white">YOU GROW IT <br /> WE MOW IT </div>
+
         </div>
         <ul className="flex gap-6 text-lg ">
           <li><a href="#" onClick={scrollToSection(homeRef)}>Services</a></li>
@@ -40,25 +42,25 @@ function App() {
 
       {/* <div className="h-[100px]" /> Spacer for nav */}
 
-      {/* Home Section */}
+      {/* service Section */}
       <div ref={homeRef} className="h-[510px] bg-[#f5f5f5] text-black text-4xl font-bold text-center">
-        <h1 className = "text item-center m-7 font-norm h-[190px] pt-22"> Our Services</h1>
-        <div className ="grid grid-cols-1 sm:grid-cols-3 gap-6 m-2 ">
-            <h2 className="text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5" >
+        <h1 className = "text item-center m-7 font-norm h-[190px] pt-27 text-green-800"> Our Services</h1>
+        <div className ="grid grid-cols-1 sm:grid-cols-3 gap-6 m-3 ">
+            <h2 className="text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
                  Lawn Mowing
                  <p className = "text-lg text-black mt-7 text-center ">
                   We provide professional lawn mowing services to keep your yard looking pristine. 
                  </p>
             </h2>
 
-            <h2 className = "text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52">
+            <h2 className = "text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
                 Side Trimming
-              <p className = "text-lg text-black mt-7 text-center">
+              <p className = "text-lg text-black mt-7 text-center font-normal">
                 Our side trimming service ensures that your hedges and bushes are neatly maintained, enhancing the overall appearance of your landscape.
               </p>
             </h2>
 
-            <h2 className = "text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52">     
+            <h2 className = "text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">     
                 Weed Control
               <p className = "text-lg text-black mt-7 text-center">
                 We offer effective weed control solutions to keep your garden healthy and free from unwanted plants.
@@ -71,7 +73,7 @@ function App() {
       </div>
 
       {/* About Section */}
-      <div ref={aboutRef} className="bg-[#dbe9e6] text-black px-12 py-12 ">
+      <div ref={aboutRef} className="bg-[#dbe9e6] text-black px-12 py-13"> 
         <div className="w-full flex flex-row items-center">
           {/* Text */}
           <div className="w-1/2 pr-8">
@@ -124,6 +126,9 @@ function App() {
         </div>
       </div>
     </div>
+
+
+
   )
 }
 
