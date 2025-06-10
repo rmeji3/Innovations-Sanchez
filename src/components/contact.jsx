@@ -24,7 +24,7 @@ const Contact = ({contactRef}) => {
             </div>
             <hr style={{ width: '950px', borderTop: '1px solid #dbe9e6' }} />
             <div className="flex justify-end text-[#fbf7f5] text-sm mt-2 w-[950px]">
-                <p>© 2023 Innovations Sanchez. All rights reserved.</p>
+                <p>© 2025 Leal Enterprises. All rights reserved.</p>
             </div>
         </div>
     )
