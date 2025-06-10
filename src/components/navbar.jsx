@@ -8,10 +8,9 @@ const scrollToSection = (ref) => (e) => {
 function Navbar({ servicesRef, aboutRef, contactRef }) {
     return (
         <nav className="bar fixed top-0 w-full h-[82px] flex items-center bg-[#446E67] text-[#fbf7f5] px-7 justify-between font-montserrat z-100">
-        <div className = "group flex items-center relative">
+        <div className = "group flex items-center relative cursor-pointer">
           <img src={logo} className="logo" alt= "TREE logo" />
-        <div className="text-2xl font-bold ml-2 text-[#fbf7f5]">YOU GROW IT <br /> WE MOW IT </div>
-
+          <div className="text-2xl font-bold ml-2 text-[#fbf7f5]">YOU GROW IT <br /> WE MOW IT </div>
         </div>
         <ul className="flex gap-6 text-lg ">
           <li><a href="#" onClick={scrollToSection(servicesRef)}>Services</a></li>
