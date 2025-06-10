@@ -1,5 +1,5 @@
 import React from "react";
-import aboutPic from './assets/pic1.png'
+import aboutPic from '../assets/pic1.png'
 
 const AboutUs = ({ aboutRef }) => {
    return (

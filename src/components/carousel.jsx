@@ -1,6 +1,6 @@
 import React from "react";
 import SimpleSlider from "./slider";
-import pic from './assets/pic1.png';
+import pic from '../assets/pic1.png';
 
 const images = [
     pic,

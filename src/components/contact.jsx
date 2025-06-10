@@ -1,6 +1,6 @@
 import React from "react";
-import emailIcon from './assets/email.svg';
-import phoneIcon from './assets/phone.svg';
+import emailIcon from '../assets/email.svg';
+import phoneIcon from '../assets/phone.svg';
 
 const Contact = ({contactRef}) => {
     return (
