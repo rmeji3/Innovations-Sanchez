@@ -8,15 +8,17 @@ const Contact = ({ contactRef }) => {
       {/* Top Row */}
       <div className="w-full max-w-[950px] flex flex-col lg:flex-row justify-between items-center gap-4">
         <div className="text-base lg:text-xl text-[#fbf7f5] font-bold text-center lg:text-left">
-          Innovations Sanchez
+          YOU GROW IT
+          <br />
+          WE MOW IT
         </div>
 
         {/* Icons */}
         <div className="flex gap-3">
-          <a href="mailto:email@example.com" className="text-white">
+          <a href="mailto:innovationssanchez@gmail.com" className="text-white">
             <FaEnvelope className="h-5 w-5" />
           </a>
-          <a href="tel:1234567890" className="text-white">
+          <a href="tel:7086827604" className="text-white">
             <FaPhone className="h-5 w-5" />
           </a>
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-white">
