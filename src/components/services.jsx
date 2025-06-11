@@ -1,37 +1,50 @@
 import React from "react";
 
-const Services = ({servicesRef}) => {
-    {/* service Section */}
-    return (
-        <div ref={servicesRef} className="h-[510px] bg-[#fbf7f5] text-black text-4xl font-bold text-center">
-        <h1 className = "text item-center font-norm h-[190px] pt-27 text-green-800"> Our Services</h1>
-        <div className ="grid grid-cols-1 sm:grid-cols-3 gap-6 m-3 ">
-            <h2 className="text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
-                Edging
-                <p className = "text-lg text-black mt-7 text-center font-normal m-4"> 
-                 Our edging services create clean lines and defined borders for your garden beds and walkways.
+const Services = ({ servicesRef }) => {
+  return (
+    <div
+      ref={servicesRef}
+      className="bg-[#fbf7f5] text-black px-4 py-12 text-center lg:h-[400px] flex flex-col justify-center"
+    >
+        {/* Heading */}
+        <h1 className="text-2xl lg:text-4xl font-bold text-green-800 mb-10">
+            Our Services
+        </h1>
+
+        {/* Service Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Edging */}
+            <div className="shadow-lg border rounded p-5 hover:shadow-2xl transition-shadow duration-300">
+                <h2 className="text-xl lg:text-2xl font-bold text-[#446E67] mb-3">
+                    Edging
+                </h2>
+                <p className="text-sm lg:text-base text-black font-normal">
+                    Our edging services create clean lines and defined borders for your garden beds and walkways.
                 </p>
-            </h2>
+            </div>
 
-            <h2 className = "text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">
-              Lawn Mowing
-            <p className = "text-lg text-black mt-7 text-center font-normal m-4">
-                 We provide professional lawn mowing services to keep your yard looking pristine. 
-            </p>
-            </h2>
+            {/* Lawn Mowing */}
+            <div className="shadow-lg border rounded p-5 hover:shadow-2xl transition-shadow duration-300">
+                <h2 className="text-xl lg:text-2xl font-bold text-[#446E67] mb-3">
+                    Lawn Mowing
+                </h2>
+                <p className="text-sm lg:text-base text-black font-normal">
+                    We provide professional lawn mowing services to keep your yard looking pristine.
+                </p>
+            </div>
 
-            <h2 className = "text-center shadow-lg text-4xl font-bold text-[#446E67] border rounded m-3 pt-5 h-52 hover:shadow-2xl transition-shadow duration-300">     
-                Bush Trimming
-            <p className = "text-lg text-black mt-7 text-center font-normal m-4">
-                We expertly trim bushes to enhance your garden’s aesthetics and health.
-            </p>
-            </h2>
+            {/* Bush Trimming */}
+            <div className="shadow-lg border rounded p-5 hover:shadow-2xl transition-shadow duration-300">
+                <h2 className="text-xl lg:text-2xl font-bold text-[#446E67] mb-3">
+                    Bush Trimming
+                </h2>
+                <p className="text-sm lg:text-base text-black font-normal">
+                    We expertly trim bushes to enhance your garden’s aesthetics and health.
+                </p>
+            </div>
         </div>
-
-        <br></br>
-        
     </div>
-  )
-}
+  );
+};
 
 export default Services;
