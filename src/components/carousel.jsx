@@ -1,11 +1,14 @@
 import React from "react";
 import SimpleSlider from "./slider";
 import pic from '../assets/pic1.png';
+import yard1 from '../assets/yard1.jpg';
+import yard2 from '../assets/yard2.jpg';
+import yard3 from '../assets/yard3.jpg';
 
 const images = [
-    pic,
-    'https://picsum.photos/seed/john/200/300',
-    'https://picsum.photos/seed/joe/200/300'
+    yard1,
+    yard2,
+    yard3
   ];
 
 const Carousel = ({homeRef}) => {
