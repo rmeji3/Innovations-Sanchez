@@ -1,14 +1,22 @@
 import React from "react";
 import { FaFacebook, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { useGetSocialsQuery } from '../store/socialsApi.js';
+import { useGetAddressQuery } from '../store/addressApi.js';
 
 const Contact = ({ contactRef }) => {
-  const { data, isLoading, isError } = useGetSocialsQuery();
+  const { data: socialsData } = useGetSocialsQuery();
+  const { data: addressData } = useGetAddressQuery();
 
-  // Fallbacks if API fails or is loading
-  const email = data?.email || 'innovationssanchez@gmail.com';
-  const phone = data?.phone || '7086827604';
-  const facebook = data?.facebook || 'https://www.facebook.com';
+  // Socials fallbacks
+  const email = socialsData?.email || 'innovationssanchez@gmail.com';
+  const phone = socialsData?.phone || '7086827604';
+  const facebook = socialsData?.facebook || 'https://www.facebook.com';
+
+  // Address fallbacks
+  const street = addressData?.street || '123 Test St';
+  const city = addressData?.city || 'Test City';
+  const state = addressData?.state || 'IL';
+  const zip = addressData?.zipcode || '60000';
 
   return (
     <div ref={contactRef} className="bg-[#446E67] flex flex-col items-center justify-center gap-4 px-4 py-6">
@@ -31,6 +39,11 @@ const Contact = ({ contactRef }) => {
             <FaFacebook className="h-5 w-5" />
           </a>
         </div>
+      </div>
+      {/* Address Test Section */}
+      <div className="w-full max-w-[950px] flex flex-col items-center my-2">
+        <span className="text-[#fbf7f5] text-sm font-semibold">Test Address:</span>
+        <span className="text-[#fbf7f5] text-base">{street}, {city}, {state} {zip}</span>
       </div>
       {/* Divider Line */}
       <hr className="w-full max-w-[950px] border-t border-[#dbe9e6]" />
