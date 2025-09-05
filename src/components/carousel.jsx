@@ -4,6 +4,7 @@ import pic from '../assets/pic1.png';
 import yard1 from '../assets/yard1.jpg';
 import yard2 from '../assets/yard2.jpg';
 import yard3 from '../assets/yard3.jpg';
+import { useGetCarouselsQuery } from '../store/carouselApi';
 
 const images = [
     yard1,
@@ -12,6 +13,14 @@ const images = [
 ]
 
 const Carousel = ({ homeRef }) => {
+  const { data, error, isLoading } = useGetCarouselsQuery();
+
+  // Use API images if available, otherwise fallback to static images
+  const apiImages = data && data.items ? data.items.map(item => ({
+    src: item.imageUrl,
+    alt: item.description || ''
+  })) : [];
+
   return (
     <div
       ref={homeRef}
@@ -29,10 +38,16 @@ const Carousel = ({ homeRef }) => {
 
       {/* Right: Carousel */}
       <div className="w-full lg:w-1/2 flex flex-col items-center justify-center bg-[#fbf7f5]">
-        <SimpleSlider images={images} />
+        {isLoading && <div>Loading...</div>}
+        {error && <div>Error loading carousel</div>}
+        {!isLoading && !error && apiImages.length > 0 ? (
+          <SimpleSlider images={apiImages.map(img => img.src)} />
+        ) : (
+          <SimpleSlider images={images} />
+        )}
       </div>
     </div>
   );
-};
+}
 
 export default Carousel;
