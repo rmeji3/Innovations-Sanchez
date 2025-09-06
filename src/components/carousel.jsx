@@ -7,9 +7,7 @@ import yard3 from '../assets/yard3.jpg';
 import { useGetCarouselsQuery } from '../store/carouselApi';
 
 const images = [
-    yard1,
-    yard2,
-    yard3
+    yard1
 ]
 
 const Carousel = ({ homeRef }) => {

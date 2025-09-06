@@ -6,18 +6,18 @@ import "slick-carousel/slick/slick-theme.css";
 export default function SimpleSlider({ images }) {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: images.length > 1, // Only infinite if more than 1 image
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: images.length > 1, // Only autoplay if more than 1 image
     autoplaySpeed: 3000,
     arrows: false,
     pauseOnHover: false,
     accessibility: true,
     focusOnSelect: false,
-    swipe: true,
-    touchMove: true,
+    swipe: images.length > 1, // Only allow swipe if more than 1 image
+    touchMove: images.length > 1, // Only allow touch move if more than 1 image
   };
 
   return (
