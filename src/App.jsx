@@ -3,8 +3,9 @@ import Services from './components/services'
 import AboutUs from './components/aboutUs'
 import Carousel from './components/carousel'
 import Contact from './components/contact'
+import { useTrackHitMutation } from './store/pageViews'
 
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import './App.css'
 
 function App() {
@@ -12,6 +13,12 @@ function App() {
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
   const homeRef = useRef(null);
+
+  const [trackHit] = useTrackHitMutation();
+
+  useEffect(() => {
+    trackHit("/"); // count a general visit once per load
+  }, [trackHit]);
 
   return (
     <div className="relative w-full font-montserrat font-sans">

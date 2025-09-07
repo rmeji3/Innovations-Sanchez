@@ -12,14 +12,7 @@ export const socialsApi = createApi({
     getSocials: builder.query({
       query: () => 'socials', // GET /api/socials
     }),
-    updateSocials: builder.mutation({
-      query: (body) => ({
-        url: 'socials',
-        method: 'PUT',
-        body,
-      }),
-    }),
   }),
 });
 
-export const { useGetSocialsQuery, useUpdateSocialsMutation } = socialsApi;
+export const { useGetSocialsQuery } = socialsApi;
