@@ -6,7 +6,7 @@
     "callNow": "CALL NOW",
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
-    "home": "Sanchez Innovations — home",
+    "home": "Sanchez Innovations : home",
     "emailLabel": "Email Sanchez Innovations",
     "facebookLabel": "Sanchez Innovations on Facebook"
   },
@@ -49,19 +49,19 @@
     "name": "SANCHEZ INNOVATIONS",
     "role": "Family Owned / Lawn Care Specialists",
     "p1": "At Sanchez Innovations, we specialize in keeping outdoor spaces clean, crisp, and beautiful. We proudly serve our neighbors across Chicagoland with dependable lawn care tailored to every yard.",
-    "p2": "We deal with every client personally and put care and precision into every project we tackle — and we show up when we say we will. English and Spanish spoken.",
+    "p2": "We deal with every client personally and put care and precision into every project we tackle and we show up when we say we will. English and Spanish spoken.",
     "button": "Get in Touch",
-    "imageAlt": "Sanchez Innovations — free estimates, call 708-682-7604"
+    "imageAlt": "Sanchez Innovations: free estimates, call 708-682-7604"
   },
   "local": {
     "title": "More than just lawns",
-    "body": "We're proudly a local, family-owned small business. Because of this, we offer flexible scheduling, quick turnarounds, and high-quality completed jobs — with free estimates, always.",
+    "body": "We're proudly a local, family-owned small business. Because of this, we offer flexible scheduling, quick turnarounds, and high-quality completed jobs with free estimates, always.",
     "word": "LOCAL",
     "stateAlt": "Illinois with a star on Chicagoland"
   },
   "area": {
     "title": "OUR SERVICE AREA",
-    "body": "Based in Harvey, Illinois — proudly serving the south suburbs and greater Chicagoland. Not sure if we cover your neighborhood? Give us a call and ask.",
+    "body": "Based in Harvey, Illinois, proudly serving the south suburbs and greater Chicagoland. Not sure if we cover your neighborhood? Give us a call and ask.",
     "mapTitle": "Google Map of Harvey, Illinois and the surrounding area"
   },
   "quote": {
@@ -81,7 +81,7 @@
     "rights": "All rights reserved."
   },
   "meta": {
-    "title": "Sanchez Innovations | Lawn Care — Mowing, Edging & Trimming",
+    "title": "Sanchez Innovations | Lawn Care: Mowing, Edging & Trimming",
     "description": "Family-owned lawn care: mowing, edging, and bush trimming with free estimates. You grow it, we mow it. Hablamos español."
   },
   "langSwitch": {
