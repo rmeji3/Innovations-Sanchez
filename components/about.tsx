@@ -5,18 +5,20 @@ import { business } from "@/lib/business";
 function IllinoisLocal({ word, stateAlt }: { word: string; stateAlt: string }) {
   return (
     <div className="relative mx-auto w-fit" role="img" aria-label={stateAlt}>
+      <Image
+        src="/images/illinois.svg"
+        alt=""
+        width={345}
+        height={616}
+        className="h-72 w-auto sm:h-96"
+      />
+      {/* star on Chicagoland */}
       <svg
-        viewBox="0 0 100 150"
+        viewBox="0 0 24 24"
         aria-hidden="true"
-        className="h-64 w-auto fill-moss sm:h-80"
+        className="absolute right-[4%] top-[5%] h-7 w-7 fill-white sm:h-8 sm:w-8"
       >
-        {/* simplified Illinois silhouette */}
-        <path d="M14,10 L62,8 L66,16 L60,22 L64,40 L68,62 L66,80 L62,96 L54,112 L48,124 L40,136 L34,130 L28,118 L20,106 L16,92 L20,78 L12,62 L16,44 L10,28 Z" />
-        {/* star on Chicagoland */}
-        <polygon
-          points="56,12 57.8,16.2 62.4,16.5 58.9,19.4 60.2,23.8 56,21.2 51.8,23.8 53.1,19.4 49.6,16.5 54.2,16.2"
-          className="fill-white"
-        />
+        <polygon points="12,1 14.9,8.6 23,9 16.7,14.2 18.9,22 12,17.5 5.1,22 7.3,14.2 1,9 9.1,8.6" />
       </svg>
       <span
         aria-hidden="true"

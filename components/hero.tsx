@@ -1,65 +1,9 @@
+import Image from "next/image";
 import type { Dictionary } from "@/lib/dictionaries";
 import { business } from "@/lib/business";
 import PhotoCarousel from "./photo-carousel";
 
 const photos = ["/images/yard1.jpg", "/images/yard2.jpg", "/images/yard3.jpg"];
-
-function StampBadge() {
-  return (
-    <svg
-      viewBox="0 0 140 140"
-      aria-hidden="true"
-      className="h-32 w-32 text-white drop-shadow-md sm:h-40 sm:w-40"
-    >
-      <defs>
-        <path
-          id="stamp-arc"
-          d="M70,70 m-49,0 a49,49 0 1,1 98,0 a49,49 0 1,1 -98,0"
-        />
-      </defs>
-      <circle
-        cx="70"
-        cy="70"
-        r="66"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2.5"
-      />
-      <circle
-        cx="70"
-        cy="70"
-        r="38"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      />
-      <text
-        fill="currentColor"
-        fontSize="10"
-        fontWeight="700"
-        letterSpacing="2.5"
-        fontFamily="var(--font-montserrat), sans-serif"
-      >
-        <textPath href="#stamp-arc" startOffset="0">
-          SANCHEZ INNOVATIONS · LAWN CARE ·
-        </textPath>
-      </text>
-      {/* grass tuft */}
-      <g
-        stroke="currentColor"
-        strokeWidth="3"
-        strokeLinecap="round"
-        fill="none"
-      >
-        <path d="M70 88 C 70 76, 70 68, 70 58" />
-        <path d="M62 88 C 62 78, 58 70, 52 64" />
-        <path d="M78 88 C 78 78, 82 70, 88 64" />
-        <path d="M55 88 C 55 82, 50 78, 44 76" />
-        <path d="M85 88 C 85 82, 90 78, 96 76" />
-      </g>
-    </svg>
-  );
-}
 
 export default function Hero({ dict }: { dict: Dictionary }) {
   const slides = photos.map((src, i) => ({
@@ -77,8 +21,14 @@ export default function Hero({ dict }: { dict: Dictionary }) {
             label={dict.hero.carouselLabel}
             goToLabel={dict.hero.carouselGoTo}
           />
-          <div className="absolute bottom-6 left-1/2 hidden -translate-x-1/4 lg:block">
-            <StampBadge />
+          <div className="absolute bottom-6 left-1/2 hidden -translate-x-1/4 rounded-full bg-white/90 p-4 shadow-lg shadow-deep/20 lg:block">
+            <Image
+              src="/images/logo.png"
+              alt=""
+              width={112}
+              height={112}
+              className="h-28 w-28"
+            />
           </div>
         </div>
 

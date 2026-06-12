@@ -1,8 +1,8 @@
-import Image from "next/image";
+import { PencilRuler, Scissors, Tractor } from "lucide-react";
 import type { Dictionary } from "@/lib/dictionaries";
 
 // Order matches dict.services.items: mowing, edging, trimming
-const photos = ["/images/yard1.jpg", "/images/yard2.jpg", "/images/yard3.jpg"];
+const icons = [Tractor, PencilRuler, Scissors];
 
 export default function Services({ dict }: { dict: Dictionary }) {
   return (
@@ -18,26 +18,26 @@ export default function Services({ dict }: { dict: Dictionary }) {
           {dict.services.title}
         </h2>
 
-        <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          {dict.services.items.map((item, i) => (
-            <article key={item.title} className="text-center">
-              <div className="relative mx-auto aspect-square w-full max-w-xs overflow-hidden shadow-md shadow-deep/10">
-                <Image
-                  src={photos[i]}
-                  alt={item.alt}
-                  fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-              <h3 className="mt-5 font-display text-xl font-bold text-fern">
-                {item.title}
-              </h3>
-              <p className="mx-auto mt-2 max-w-xs text-[15px] leading-relaxed text-ink/70">
-                {item.description}
-              </p>
-            </article>
-          ))}
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          {dict.services.items.map((item, i) => {
+            const Icon = icons[i];
+            return (
+              <article
+                key={item.title}
+                className="group border border-stone bg-white px-8 py-10 text-center shadow-md shadow-deep/5 transition-all duration-300 hover:-translate-y-1 hover:border-fern/30 hover:shadow-lg hover:shadow-fern/10"
+              >
+                <span className="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-mint text-fern transition-colors duration-300 group-hover:bg-fern group-hover:text-white">
+                  <Icon className="h-8 w-8" aria-hidden="true" />
+                </span>
+                <h3 className="mt-6 font-display text-xl font-bold text-fern">
+                  {item.title}
+                </h3>
+                <p className="mx-auto mt-3 max-w-xs text-[15px] leading-relaxed text-ink/70">
+                  {item.description}
+                </p>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
