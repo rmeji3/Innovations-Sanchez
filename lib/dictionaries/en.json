@@ -59,6 +59,11 @@
     "word": "LOCAL",
     "stateAlt": "Illinois with a star on Chicagoland"
   },
+  "area": {
+    "title": "OUR SERVICE AREA",
+    "body": "Based in Harvey, Illinois — proudly serving the south suburbs and greater Chicagoland. Not sure if we cover your neighborhood? Give us a call and ask.",
+    "mapTitle": "Google Map of Harvey, Illinois and the surrounding area"
+  },
   "quote": {
     "text": "You grow it, we mow it.",
     "attribution": "The Sanchez Innovations promise",

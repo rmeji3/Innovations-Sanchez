@@ -59,6 +59,11 @@
     "word": "LOCAL",
     "stateAlt": "Illinois con una estrella en el área de Chicago"
   },
+  "area": {
+    "title": "ÁREA DE SERVICIO",
+    "body": "Estamos en Harvey, Illinois — y servimos con orgullo los suburbios del sur y toda el área de Chicago. ¿No sabes si llegamos a tu vecindario? Llámanos y pregunta.",
+    "mapTitle": "Mapa de Google de Harvey, Illinois y sus alrededores"
+  },
   "quote": {
     "text": "Tú lo cultivas, nosotros lo cortamos.",
     "attribution": "La promesa de Sanchez Innovations",
