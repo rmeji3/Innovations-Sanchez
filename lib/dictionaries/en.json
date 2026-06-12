@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "callNow": "CALL NOW",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "home": "Sanchez Innovations : home",
+    "emailLabel": "Email Sanchez Innovations",
+    "facebookLabel": "Sanchez Innovations on Facebook"
+  },
+  "hero": {
+    "title1": "PICTURE",
+    "title2": "PERFECT.",
+    "subtitle": "The best and most reliable lawn care services in Chicagoland.",
+    "cta": "Get a Free Estimate",
+    "carouselLabel": "Photos of our recent work",
+    "carouselPrev": "Previous photo",
+    "carouselNext": "Next photo",
+    "carouselGoTo": "Go to photo",
+    "slides": [
+      "Freshly mowed backyard with clean stripes",
+      "Open lawn trimmed edge to edge",
+      "Tidy yard with crisp mow lines"
+    ]
+  },
+  "services": {
+    "title": "OUR SPECIALTIES",
+    "items": [
+      {
+        "title": "Lawn Mowing",
+        "description": "From weekly cuts to seasonal cleanups, we keep your grass trimmed, even, and beautiful.",
+        "alt": "Freshly mowed lawn with clean stripes"
+      },
+      {
+        "title": "Edging",
+        "description": "Clean, defined lines along driveways, walkways, and garden beds that make the whole yard look sharp.",
+        "alt": "Lawn edged cleanly along the borders"
+      },
+      {
+        "title": "Bush Trimming",
+        "description": "Careful shaping that keeps your bushes and hedges healthy, tidy, and looking their best.",
+        "alt": "Neatly trimmed yard with tidy bushes"
+      }
+    ]
+  },
+  "about": {
+    "name": "SANCHEZ INNOVATIONS",
+    "role": "Family Owned / Lawn Care Specialists",
+    "p1": "At Sanchez Innovations, we specialize in keeping outdoor spaces clean, crisp, and beautiful. We proudly serve our neighbors across Chicagoland with dependable lawn care tailored to every yard.",
+    "p2": "We deal with every client personally and put care and precision into every project we tackle and we show up when we say we will. English and Spanish spoken.",
+    "button": "Get in Touch",
+    "imageAlt": "Sanchez Innovations: free estimates, call 708-682-7604"
+  },
+  "local": {
+    "title": "More than just lawns",
+    "body": "We're proudly a local, family-owned small business. Because of this, we offer flexible scheduling, quick turnarounds, and high-quality completed jobs with free estimates, always.",
+    "word": "LOCAL",
+    "stateAlt": "Illinois with a star on Chicagoland"
+  },
+  "area": {
+    "title": "OUR SERVICE AREA",
+    "body": "Based in Harvey, Illinois, proudly serving the south suburbs and greater Chicagoland. Not sure if we cover your neighborhood? Give us a call and ask.",
+    "mapTitle": "Google Map of Harvey, Illinois and the surrounding area"
+  },
+  "quote": {
+    "text": "You grow it, we mow it.",
+    "attribution": "The Sanchez Innovations promise",
+    "button": "Find Us on Facebook"
+  },
+  "cta": {
+    "title": "Let us take care of your yard!",
+    "subtitle": "Call us at 708-682-7604 or contact us for your free quote.",
+    "button": "Contact Us"
+  },
+  "footer": {
+    "phoneLabel": "Call Sanchez Innovations",
+    "emailLabel": "Email Sanchez Innovations",
+    "facebookLabel": "Sanchez Innovations on Facebook",
+    "rights": "All rights reserved."
+  },
+  "meta": {
+    "title": "Sanchez Innovations | Lawn Care: Mowing, Edging & Trimming",
+    "description": "Family-owned lawn care: mowing, edging, and bush trimming with free estimates. You grow it, we mow it. Hablamos español."
+  },
+  "langSwitch": {
+    "label": "Idioma: Español",
+    "short": "ES"
+  }
+}

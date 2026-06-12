@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — extended from the original site colors */
+  --color-fern: #446e67; /* primary brand green */
+  --color-pine: #32524c; /* darker green for hovers */
+  --color-deep: #223b36; /* darkest — bands, overlays */
+  --color-moss: #6f998f; /* soft mid green */
+  --color-mint: #dbe9e6; /* brand mint surface */
+  --color-mint-soft: #ecf4f1; /* lighter mint tint */
+  --color-cream: #fbf7f5; /* brand cream */
+  --color-stone: #f1efec; /* light gray section band */
+  --color-ink: #2b3331; /* body text */
+}
+
+/* Font vars reference next/font variables set on <body>, so they must be
+   inlined into the utilities rather than emitted at :root */
+@theme inline {
+  --font-display: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}

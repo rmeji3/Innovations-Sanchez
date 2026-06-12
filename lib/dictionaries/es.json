@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "callNow": "LLAME YA",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú",
+    "home": "Sanchez Innovations — inicio",
+    "emailLabel": "Enviar correo a Sanchez Innovations",
+    "facebookLabel": "Sanchez Innovations en Facebook"
+  },
+  "hero": {
+    "title1": "VERDE",
+    "title2": "PERFECTO.",
+    "subtitle": "El cuidado de césped más confiable del área de Chicago.",
+    "cta": "Cotización Gratis",
+    "carouselLabel": "Fotos de nuestro trabajo reciente",
+    "carouselPrev": "Foto anterior",
+    "carouselNext": "Siguiente foto",
+    "carouselGoTo": "Ir a la foto",
+    "slides": [
+      "Patio recién cortado con líneas limpias",
+      "Césped amplio cortado de borde a borde",
+      "Jardín ordenado con líneas de corte definidas"
+    ]
+  },
+  "services": {
+    "title": "NUESTROS SERVICIOS",
+    "items": [
+      {
+        "title": "Corte de Césped",
+        "description": "Desde cortes semanales hasta limpiezas de temporada, mantenemos tu césped parejo, sano y hermoso.",
+        "alt": "Césped recién cortado con líneas limpias"
+      },
+      {
+        "title": "Bordes",
+        "description": "Líneas limpias y definidas en banquetas, caminos y jardineras que hacen lucir todo el jardín.",
+        "alt": "Césped con bordes bien definidos"
+      },
+      {
+        "title": "Poda de Arbustos",
+        "description": "Poda cuidadosa que mantiene tus arbustos y setos sanos, ordenados y luciendo lo mejor posible.",
+        "alt": "Jardín ordenado con arbustos podados"
+      }
+    ]
+  },
+  "about": {
+    "name": "SANCHEZ INNOVATIONS",
+    "role": "Negocio Familiar / Especialistas en Césped",
+    "p1": "En Sanchez Innovations nos especializamos en mantener los espacios exteriores limpios, frescos y hermosos. Servimos con orgullo a nuestros vecinos del área de Chicago con un cuidado del césped confiable y adaptado a cada jardín.",
+    "p2": "Atendemos a cada cliente personalmente y ponemos cuidado y precisión en cada proyecto — y llegamos cuando decimos que vamos a llegar. Hablamos inglés y español.",
+    "button": "Contáctanos",
+    "imageAlt": "Sanchez Innovations — cotizaciones gratis, llame al 708-682-7604"
+  },
+  "local": {
+    "title": "Más que solo césped",
+    "body": "Somos con orgullo un negocio local y familiar. Por eso ofrecemos horarios flexibles, respuestas rápidas y trabajos terminados con calidad — y las cotizaciones siempre son gratis.",
+    "word": "LOCAL",
+    "stateAlt": "Illinois con una estrella en el área de Chicago"
+  },
+  "area": {
+    "title": "ÁREA DE SERVICIO",
+    "body": "Estamos en Harvey, Illinois — y servimos con orgullo los suburbios del sur y toda el área de Chicago. ¿No sabes si llegamos a tu vecindario? Llámanos y pregunta.",
+    "mapTitle": "Mapa de Google de Harvey, Illinois y sus alrededores"
+  },
+  "quote": {
+    "text": "Tú lo cultivas, nosotros lo cortamos.",
+    "attribution": "La promesa de Sanchez Innovations",
+    "button": "Síguenos en Facebook"
+  },
+  "cta": {
+    "title": "¡Deja que cuidemos tu jardín!",
+    "subtitle": "Llámanos al 708-682-7604 o contáctanos para tu cotización gratis.",
+    "button": "Contáctanos"
+  },
+  "footer": {
+    "phoneLabel": "Llamar a Sanchez Innovations",
+    "emailLabel": "Enviar correo a Sanchez Innovations",
+    "facebookLabel": "Sanchez Innovations en Facebook",
+    "rights": "Todos los derechos reservados."
+  },
+  "meta": {
+    "title": "Sanchez Innovations | Cuidado de Césped — Corte, Bordes y Poda",
+    "description": "Cuidado de césped familiar: corte, bordes y poda de arbustos con cotizaciones gratis. Tú lo cultivas, nosotros lo cortamos."
+  },
+  "langSwitch": {
+    "label": "Language: English",
+    "short": "EN"
+  }
+}
