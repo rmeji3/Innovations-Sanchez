@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { isLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
+import LocalBusinessJsonLd from "@/components/local-business-jsonld";
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
@@ -19,6 +20,7 @@ export default async function Home({ params }: Props) {
 
   return (
     <>
+      <LocalBusinessJsonLd dict={dict} lang={lang} />
       <Navbar dict={dict} lang={lang} />
       <main id="main">
         <Hero dict={dict} />
